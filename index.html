@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hitch-a-ride</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="sign-in.html">Login</a></li>
+                <li class="topnav-right"><a href="sign-up.html">Sign Up</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <div>
+        <div class="col">
+            <div class="card">
+                <img src="./images/camry2.jpg" alt="Camry" style="width: 100%">
+                <div class="container">
+                    <h3><b>Toyota Camry</b></h3>
+                    <p><b>Location:</b> Maryland</p>
+                    <p><b>Destination:</b> Ikoyi</p>
+                    <p><b>Time of Departure:</b> 8:00AM</p>
+                    <p class="price"><b>Fee:</b> <span>&#8358</span>3000</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/bmw3.jpg" alt="BMW" style="width:100%">
+                <div class="container">
+                    <h3><b>BMW</b></h3>
+                    <p><b>Location:</b> Ojota</p>
+                    <p><b>Destination:</b> Lekki</p>
+                    <p><b>Time of Departure:</b> 9:00AM</p>
+                    <p class="price"><b>Fee:</b> <span>&#8358</span>4000</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/toyota.jpg" alt="Toyota" style="width:100%">
+                <div class="container">
+                    <h3><b>Toyota Highlander</b></h3>
+                    <p><b>Location:</b> Ikeja</p>
+                    <p><b>Destination:</b> Apapa</p>
+                    <p><b>Time of Departure:</b> 12:00PM</p>
+                    <p class="price"><b>Fee:</b> <span>&#8358</span>5000</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/kia1.png" alt="KIA" style="width:100%">
+                <div class="container">
+                    <h3><b>KIA</b></h3>
+                    <p><b>Location:</b> Festac</p>
+                    <p><b>Destination:</b> Ikeja</p>
+                    <p><b>Time of Departure:</b> 2:00PM</p>
+                    <p class="price"><b>Fee:</b> <span>&#8358</span>3000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--
+    <footer class="footsy">
+        <nav>
+            <ul class="bottom-nav">
+                <li class="footer-nav"><a href="caterer-sign-in.html">Caterer</a></li>
+            </ul>
+        </nav>
+    </footer>
+-->
+
+    <script>
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/register.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="signIn.html">Login</a></li>
+                <li class="topnav-right"><a href="sign-up.html">Sign Up</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <div class="main">
+        
+        <form action="#" method="post" class="form-box">
+            <h1 class="header">Login to hitch a ride</h1>
+            <label for="email">Email</label>
+            <div class="inp-row">
+                <input class="inp" type="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <label for="password">Password</label>
+            <div class="inp-row">
+                <input class="inp" type="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <input type="button" class="sub-btn" name="submit" value="Log in" onclick="window.open('see-menu.html', target = '_self')"><br> 
+            <a class="sign-btn" href="sign-up.html">Don't have an account? Click here</a>
+        </form>
+    </div>
+
+    <script>
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

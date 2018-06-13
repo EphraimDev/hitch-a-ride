@@ -1,0 +1,539 @@
+/*######## Universal Styling ##############*/
+* {
+    box-sizing: border-box;
+}
+
+header, nav, footer {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: greenyellow;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    overflow: hidden;
+    background-color: greenyellow;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+
+ul.topnav li a:hover {
+    background-color: yellowgreen;
+}
+
+ul.topnav li.dropdown-icon {
+    display: none;
+}
+
+/*footer.footsy {
+        background-color: greenyellow;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}*/
+
+ul.bottom-nav li.footer-nav {
+    float: right;
+    list-style: none;
+}
+
+ul.bottom-nav li.footer-nav a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+ul.bottom-nav li a:hover {
+    background-color: yellowgreen;
+}
+
+/*######## Home Page Styling ##############*/
+
+.col {
+    width: auto;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    width: 20%;
+    background: orange;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.btn {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: greenyellow;
+    color: white;
+    font-weight: bold;
+}
+
+/* For forms */
+
+.main {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.form-box {
+    padding: 10px 25px 20px 25px;
+    width: 600px;
+}
+
+.header {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.passenger-btn {
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    width: 48%;
+    color: black;
+    font-weight: bold;
+    margin-right: 1px;
+}
+
+.driver-btn {
+    text-align: center;
+    padding: 0.6rem 1.2rem;
+    width: 48%;
+    color: black;
+    font-weight: bold;
+    margin-right: 1px;
+}
+
+.not-passenger-btn {
+    text-align: center;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    width: 48%;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+.not-driver-btn {
+    text-align: center;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    width: 48%;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+.inp {
+    font-size: 20px;
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px #444;
+}
+
+.inp:focus {
+    outline: none;
+    box-shadow: 0 0 5px 1px #43a286;
+    color: black;
+    font-weight: bold;
+}
+
+label {
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+.inp-row {
+    margin: 5px 0 5px 0;
+}
+
+.sub-btn {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: greenyellow;
+    color: white;
+    font-weight: bold;
+}
+
+.sub-btn:focus {
+    outline: none;
+    color: yellowgreen;
+}
+
+.sign-btn {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    margin: 10px;
+}
+
+/* Confirmation Page */
+
+.col-confirm {
+    width: 900px;
+    margin:0 auto;
+    margin-top: 100px;
+}
+
+.confirm h4{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.confirm p{
+    font-size: 30px;
+    text-transform:capitalize;
+}
+
+/* My orders page */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: orange;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: greenyellow;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* On smaller screens, decrease text size */
+
+@media screen and (max-width: 580px) {
+     header {
+        margin: 0;
+}
+    
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdown-icon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+       .col {
+    width: 90%;
+           height: 100%
+    margin-top: 50px;
+           padding: 20px
+        
+}
+    
+    .card {
+        width: 100%;
+        height: 70%;
+        display: inline-block;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .main {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form-box {
+        width: auto;
+    }
+    
+    .inp {
+    font-size: 12px;
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px #444;
+    }
+    
+    .inp:focus {
+    outline: none;
+    box-shadow: 0 0 5px 1px #43a286;
+    color: black;
+    font-weight: bold;
+        font-size: 15px;
+}
+    
+}
+
+
+@media only screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    ul.topnav li.dropdown-icon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+     .col {
+    width: 90%;
+    margin-top: 50px;
+         margin-bottom: 50px;
+         height: 100%;
+         padding: 20px;
+        
+}
+    
+    .card {
+        width: 100%;
+        height: 70%;
+        display: inline-block;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .main {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form-box {
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    header {
+        margin: 0;
+        display: block;
+}
+    
+    nav ul {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdown-icon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    .col {
+    width: 90%;
+    margin-top: 50px;
+        padding: 30px;
+    }
+    
+    .card {
+        width: 100%;
+        height: 70%;
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .main {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form-box {
+        width: auto;
+    }
+}
