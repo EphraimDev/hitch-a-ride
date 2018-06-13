@@ -333,7 +333,7 @@ tr:nth-child(even) {
 
 /* On smaller screens, decrease text size */
 
-@media screen and (max-width: 580px) {
+@media screen and (min-width: 280px) {
      header {
         margin: 0;
 }
@@ -368,17 +368,27 @@ tr:nth-child(even) {
     }
     
        .col {
-    width: 90%;
-           height: 100%
+    width: 80%;
     margin-top: 50px;
-           padding: 20px
-        
+           padding: 20px; 
 }
     
     .card {
-        width: 100%;
-        height: 70%;
+        width: 90%;
+        height: 20%;
         display: inline-block;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .col .card h3 {
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .col .card p {
+        margin: 5px;
+        font-size: 15px;
     }
     
     img {
@@ -414,7 +424,193 @@ tr:nth-child(even) {
 }
 
 
-@media only screen and (max-width: 680px) {
+@media screen and (min-width: 360px) {
+     header {
+        margin: 0;
+}
+    
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdown-icon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+       .col {
+    width: 100%;
+           height: 100%
+    margin-top: 50px;
+           padding: 20px
+        
+}
+    
+    .card {
+        width: 80%;
+        height: 20%;
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .col .card h3 {
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .col .card p {
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .main {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form-box {
+        width: auto;
+    }
+    
+    .inp {
+    font-size: 12px;
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px #444;
+    }
+    
+    .inp:focus {
+    outline: none;
+    box-shadow: 0 0 5px 1px #43a286;
+    color: black;
+    font-weight: bold;
+        font-size: 15px;
+}
+    
+}
+
+
+@media screen and (min-width: 580px) {
+     header {
+        margin: 0;
+}
+    
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdown-icon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+       .col {
+    width: 80%;
+           height: 100%
+    margin-top: 50px;
+           padding: 20px
+        
+}
+    
+    .card {
+        width: 60%;
+        height: 20%;
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .col .card h3 {
+        margin: 5px;
+        font-size: 15px;
+    }
+    
+    .col .card p {
+        margin: 5px;
+        font-size: 15px;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .main {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form-box {
+        width: auto;
+    }
+    
+    .inp {
+    font-size: 12px;
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px #444;
+    }
+    
+    .inp:focus {
+    outline: none;
+    box-shadow: 0 0 5px 1px #43a286;
+    color: black;
+    font-weight: bold;
+        font-size: 15px;
+}
+    
+}
+
+
+@media only screen and (min-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
     }
@@ -444,7 +640,7 @@ tr:nth-child(even) {
     }
     
      .col {
-    width: 90%;
+    width: 80%;
     margin-top: 50px;
          margin-bottom: 50px;
          height: 100%;
@@ -452,10 +648,22 @@ tr:nth-child(even) {
         
 }
     
-    .card {
-        width: 100%;
-        height: 70%;
+     .card {
+        width: 40%;
+        height: 20%;
         display: inline-block;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .col .card h3 {
+        margin: 5px;
+        font-size: 15px;
+    }
+    
+    .col .card p {
+        margin: 5px;
+        font-size: 15px;
     }
     
     img {
@@ -472,7 +680,7 @@ tr:nth-child(even) {
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 720px) {
     header {
         margin: 0;
         display: block;
@@ -513,16 +721,114 @@ tr:nth-child(even) {
     }
     
     .col {
-    width: 90%;
+    width: 100%;
     margin-top: 50px;
         padding: 30px;
     }
     
     .card {
-        width: 100%;
-        height: 70%;
+        width: 40%;
+        height: 40%;
         display: inline-block;
         margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .col .card h3 {
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .col .card p {
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    .col .card a {
+        margin: 5px;
+        font-size: 20px;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .main {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .form-box {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    header {
+        margin: 0;
+        display: block;
+}
+    
+    nav ul {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdown-icon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdown-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    .col {
+    width: 100%;
+    margin-top: 50px;
+        padding: 30px;
+    }
+    
+    .card {
+        width: 45%;
+        height: 45%;
+        display: inline-block;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .col .card h3 {
+        margin: 5px;
+        font-size: 30px;
+    }
+    
+    .col .card p {
+        margin: 5px;
+        font-size: 25px;
+    }
+    
+    .col .card a {
+        margin: 5px;
+        font-size: 25px;
     }
     
     img {
