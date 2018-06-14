@@ -27,13 +27,13 @@
     <div class="main">
         <form action="#" method="post" class="form-box">
             <h1 class="header">Login to hitch a ride</h1>
-            <input type="button" class="passenger-btn" name="Passenger" value="Passenger">
-            <input type="button" class="not-driver-btn" name="Driver" value="Driver" onclick="window.open('login_driver_profile.html', target = '_self')">
+            <input type="button" class="not-passenger-btn" name="Passenger" value="Passenger" onclick="window.open('sign-in.html', target = '_self')">
+            <input type="button" class="driver-btn" name="Driver" value="Driver">
             <br>
                 <input class="inp" type="email" name="email" placeholder="Enter Email" required>
                 <input class="inp" type="password" name="password" placeholder="Enter Password" required> <br>
-            <input type="button" class="sub-btn" name="submit" value="Log in" onclick="window.open('available_vehicles.html', target = '_self')"><br> 
-            <a class="sign-btn" href="sign-up.html">Don't have an account? Click here</a>
+            <input type="button" class="sub-btn" name="submit" value="Log in" onclick="window.open('driver_profile.html', target = '_self')"><br> 
+            <a class="sign-btn" href="available_vehicles.html">Don't have an account? Click here</a>
         </form>
     </div>
 

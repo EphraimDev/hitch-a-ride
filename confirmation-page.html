@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="my_bookings.html">My Bookings</a></li>
+                <li class="topnav-right"><a href="index.html">Sign Out</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <div>
+        <div class="col-confirm">
+            <div class="confirm">
+                <h4>Thank you for choosing to hitch a ride with us</h4>
+                <p>Click <a href="available_vehicles.html">here</a> to return to the home page</p>
+                <p>Click <a href="my_bookings.html">here</a> to see your bookings</p>
+            </div>
+                
+        </div>
+    </div>
+    
+    <script>
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

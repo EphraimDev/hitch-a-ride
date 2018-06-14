@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="my_bookings.html">My Bookings</a></li>
+                <li class="topnav-right"><a href="index.html">Sign Out</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        </header>
+    
+<div class="col">
+    <h2>My Bookings</h2>
+
+<table>
+  <tr>
+    <th>S/N</th>
+    <th>Vehicle</th>
+      <th>Color</th>
+      <th>Pick-up Location</th>
+      <th>Destination</th>
+      <th>Fare</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Status</th>
+  </tr>
+  <tr>
+    <td>001</td>
+    <td>Toyota Camry</td>
+      <td>Silver</td>
+      <td>Ikeja</td>
+      <td>Lekki</td>
+      <td><span>&#8358</span>3000</td>
+      <td>12/28/2005</td>
+      <td>14:30</td>
+      <td>Completed</td>
+  </tr>
+  <tr>
+    <td>002</td>
+      <td>KIA</td>
+      <td>Black</td>
+      <td>Ketu</td>
+      <td>Apapa</td>
+      <td><span>&#8358</span>3000</td>
+      <td>12/28/2005</td>
+      <td>14:30</td>
+      <td>Canceled</td>
+  </tr>
+</table>
+    </div>
+
+    <script>
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
