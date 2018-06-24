@@ -1,0 +1,4 @@
+node_modules
+fabric8-analytical
+package-lock.json
+/.sonarlint
