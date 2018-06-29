@@ -1,13 +1,13 @@
-import { Router } from 'express';
+import express from 'express';
 import DriverController from '../controller/offerRideController';
-import rideOfferValidation from '../middleware/validators/rideoffers';
+//import ValidateInput from '../middleware/validators/rideoffers';
 
-const router = Router();
+const router = express.Router();
 
-router.post('/api/v1/rides', rideOfferValidation.create, DriverController.create);
+router.post('/api/v1/rides', DriverController.create);
 router.get('/api/v1/rides', DriverController.getAllRideOffers);
 router.get('/api/v1/rides/:rideId', DriverController.getRide);
-router.put('/api/v1/rides/:rideId', rideOfferValidation.update, DriverController.update);
+router.put('/api/v1/rides/:rideId', DriverController.update);
 router.delete('/api/v1/rides/:rideId', DriverController.deleteRide);
 
 export default router;

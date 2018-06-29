@@ -12,7 +12,7 @@ app.use(logger('dev'));
 
 // parse incoming requests data (https://github.com/expressjs/body-parser)
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(router);
 
 // Set environment port
