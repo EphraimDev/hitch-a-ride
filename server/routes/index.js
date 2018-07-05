@@ -1,13 +1,12 @@
 import express from 'express';
-import driverRoutes from './driverRoutes';
-import requestRoutes from './requestRoute';
-//import mealRoutes from './meals';
-//import menuRoutes from './menu';
+import offerRoutes from './rideOffers';
+//import joinRoutes from './joinRoute';
+import userRoutes from './userRoutes';
 
 const router = express.Router();
 
-router.use(driverRoutes);
-router.use(requestRoutes);
-//router.use(mealRoutes);
+router.use(offerRoutes);
+//router.use(joinRoutes);
+router.use(userRoutes);
 
 export default router;

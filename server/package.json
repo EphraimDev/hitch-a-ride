@@ -4,6 +4,7 @@
   "description": "app through which riders can share ride",
   "main": "app.js",
   "scripts": {
+    "db": "babel-node db/index.js",
     "start": "nodemon --exec babel-node app.js --presets env,stage-2",
     "test": "cross-env NODE_ENV=test nyc mocha --compilers js:babel-register ./test/*.test.js --recursive --timeout 50000 --exit"
   },
@@ -56,6 +57,7 @@
     "nyc": "^11.7.1",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
+    "random-string": "^0.2.0",
     "sequelize": "^4.37.6",
     "sequelize-cli": "^4.0.0",
     "sinon": "^4.5.0",

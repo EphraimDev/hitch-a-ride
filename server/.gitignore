@@ -1,4 +1,4 @@
 node_modules
-fabric8-analytical
+fabric8-analytics.log
 package-lock.json
 /.sonarlint
